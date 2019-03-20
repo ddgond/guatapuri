@@ -1,5 +1,6 @@
 ---
 title: Guatapuri
+layout: default
 ---
 
 ## Guatapuri
