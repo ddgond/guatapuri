@@ -3,6 +3,6 @@ title: Guatapuri
 layout: default
 ---
 
-## Guatapuri
+## About Me
 
-Placeholder
+I'm a Beat Saber mapper/player, musicmaker, and amateur 3D modeler. Nice to meet you!
