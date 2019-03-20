@@ -1,6 +1,6 @@
 ---
 title: More
-layout: post
+layout: default
 ---
 
 # More
