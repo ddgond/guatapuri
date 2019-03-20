@@ -1,6 +1,6 @@
 ---
 title: More
-layout: default
+layout: music
 ---
 
 # More
