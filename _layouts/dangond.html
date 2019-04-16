@@ -1,0 +1,28 @@
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/dangond.css">
+    <script src="/assets/scripts/dangond.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="interactiveContainer">
+      <video loop autoplay muted>
+        <source src="/assets/video/dangond.mp4">
+      </video>
+      <div class="leftMenuImg" onclick="goTo('story')">
+        <img class="imgDefault" src="/assets/img/StoryMode.png" alt="">
+        <img class="imgHover" src="/assets/img/StoryModeHover.png" alt="">
+      </div>
+      <div class="rightMenuImg" onclick="goTo('sound')">
+        <img class="imgDefault" src="/assets/img/SoundTest.png" alt="">
+        <img class="imgHover" src="/assets/img/SoundTestHover.png" alt="">
+      </div>
+      <div id="fadeToBlack activeFade">
+
+      </div>
+    </div>
+  </body>
+</html>
