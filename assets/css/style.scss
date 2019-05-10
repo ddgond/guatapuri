@@ -4,7 +4,12 @@
 @import "{{ site.theme }}";
 
 header > a {
-  color: #FFFFFF;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #CDFFFE;
+  background-image: linear-gradient(120deg, #CDFFFE, #FEC582);
 }
 
 .models-content {
