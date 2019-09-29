@@ -4,4 +4,22 @@
 
 .songTitle {
   margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.modelTitle {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+img.projectImage {
+  width: 200px;
+}
+
+img.albumArt {
+  width: 200px;
+}
+
+img.modelImage {
+  width: 200px;
 }
