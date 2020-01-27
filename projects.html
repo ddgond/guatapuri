@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body class="bg-washed-blue">
+    <nav class="pa3 pa4-ns">
+      <article class="mw6 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10" data-name="Profile">
+        <div class="tc">
+          <img src="assets/images/profile.png" class="br-100 h4 w4 dib ba bw1 b--dark-green pa1" title="Photo of a kitty staring at you">
+          <h1 class="f3 mb2">Daniel Dangond</h1>
+          <hr class="mw3 ba bw1 b--dark-green">
+        </div>
+        <p class="tc f5 fw4 gray mt0">Computer Science and Comparative Media Studies (MIT '20)</p>
+        <div class="tc pb3">
+          <a class="link dim gray f6 f5-ns dib mr3" href="index.html" title="Home">Home</a>
+          <a class="link dim gray f6 f5-ns dib mr3" href="projects.html" title="Projects">Projects</a>
+          <a class="link dim gray f6 f5-ns dib mr3" href="music.html" title="Music">Music</a>
+          <a class="link dim gray f6 f5-ns dib" href="3d.html" title="3D Modeling">3D Modeling</a>
+        </div>
+      </article>
+    </nav>
+    <article class="center mw5 mw7-ns hidden ba b--dark-green mv4" data-name="Intro">
+      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Intro</h1>
+      <div class="pa3 bt b--dark-green bg-white">
+        <p class="f6 f5-ns lh-copy mv0">
+          This is where I share the various projects I work on, whether for classes, research,
+          or personal enjoyment. Feel free to look through what I have, and I'll
+          try to make sure to keep this up to date.
+        </p>
+      </div>
+    </article>
+
+    <article class="center mw4 mw7-ns hidden ba b--dark-green mv4" data-name="Projects">
+      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Projects</h1>
+      <div class="flex flex-column justify-around items-center bt b--dark-green bg-white pv4">
+        <div id="languages" class="br2 ba dark-gray b--black-10 mb3 bg-white">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <div style="background-image:url(assets/images/languagePractice.png);" class="bg-center cover aspect-ratio--object"></div>
+          </div>
+          <div class="pa2 ph3-ns pb3-ns bg-white">
+            <div class="dt w-100 mt1">
+              <div class="dtc">
+                <h1 class="f5 f4-ns mv0">VR Languages</h1>
+              </div>
+              <div class="dtc tr">
+                <h2 class="f5 mv0 gold">In Progress</h2>
+              </div>
+            </div>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+              This is a research project I am working on at MIT as the head developer.
+              Within it, you can interact with digital agents in your target language
+              in order to simulate and practice various scenarios you might encounter
+              in a foreign country. At the moment, you can explore a small city
+              area where you can ask for direction, a café where you can order food,
+              and a hotel where you can check into your room and complete short tasks.
+              We are currently working on adding a grocery store where the user can
+              purchase food from a list of items. The currently linked video is
+              slightly outdated for now, but will be updated in the future.
+            </p>
+            <div class="tc">
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://youtu.be/ToFwMlaVJdM" title="YouTube Trailer">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/vr-urop" title="GitHub Repository">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="ascent" class="br2 ba dark-gray b--black-10 mb3 bg-white">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <div style="background-image:url(assets/images/ascent.png);" class="bg-center cover aspect-ratio--object"></div>
+          </div>
+          <div class="pa2 ph3-ns pb3-ns bg-white">
+            <div class="dt w-100 mt1">
+              <div class="dtc">
+                <h1 class="f5 f4-ns mv0">Ascent VR</h1>
+              </div>
+              <div class="dtc tr">
+                <h2 class="f5 mv0 green">Completed</h2>
+              </div>
+            </div>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+              Ascent is an experience I created as part of a team for the class
+              2.S972 (Virtual Reality, Sound, and Cinema) at MIT, in collaboration
+              with Berklee and Harvard. I was in charge of programming on this
+              project and learned a lot about developing for VR through it. I also
+              learned how to use FMOD (both FMOD Studio and the Unity integration)
+              to bring in the music.
+            </p>
+            <div class="tc">
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://youtu.be/9UMlzILZtHc" title="YouTube Trailer">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/ascent" title="GitHub Repository">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/ascent/releases" title="GitHub Releases">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.171 512.171" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M479.046,283.925c-1.664-3.989-5.547-6.592-9.856-6.592H352.305V10.667C352.305,4.779,347.526,0,341.638,0H170.971    c-5.888,0-10.667,4.779-10.667,10.667v266.667H42.971c-4.309,0-8.192,2.603-9.856,6.571c-1.643,3.989-0.747,8.576,2.304,11.627    l212.8,213.504c2.005,2.005,4.715,3.136,7.552,3.136s5.547-1.131,7.552-3.115l213.419-213.504    C479.793,292.501,480.71,287.915,479.046,283.925z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="tripleBeat" class="br2 ba dark-gray b--black-10 mb3 bg-white">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <div style="background-image:url(assets/images/tripleBeat.png);" class="bg-center cover aspect-ratio--object"></div>
+          </div>
+          <div class="pa2 ph3-ns pb3-ns bg-white">
+            <div class="dt w-100 mt1">
+              <div class="dtc">
+                <h1 class="f5 f4-ns mv0">Triple Beat</h1>
+              </div>
+              <div class="dtc tr">
+                <h2 class="f5 mv0 green">Completed</h2>
+              </div>
+            </div>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+              Triple Beat is a rhythm game I developed for the July 2019 Summer Slow
+              Jams game jam organized by Portland Indie Game Squad. The theme was
+              "3-Button, 3-Color Games", and I took the opportunity to create an
+              original rhythm game of my own. It has a strange control scheme due to
+              limitations of the MacBook keyboard (it won't register pressing the up
+              arrow, left arrow, and right arrow at the same time), but it's very
+              playable and enjoyable. It only has one song included (which I wrote),
+              but it also includes a built-in map editor which can be used to add
+              more. I am quite proud of this game, as I put a lot of effort into
+              the aesthetics, mechanics, and music, <em>especially</em> when compared to
+              JuSaber. It was also my first solo game jam, and my first time creating
+              an editor of any kind. Development went smoothly and I couldn't be
+              happier with the result. Plus, it works on Mac, Windows, AND Linux!
+            </p>
+            <div class="tc">
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://www.youtube.com/watch?v=CYngEvmjFfY" title="YouTube Trailer">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://guatapuri.itch.io/triple-beat" title="Itch.io">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M3.129 1.338c-1.047 0.622-3.109 2.991-3.129 3.612v1.029c0 1.304 1.219 2.45 2.325 2.45 1.329 0 2.436-1.101 2.436-2.408 0 1.307 1.069 2.408 2.398 2.408s2.364-1.101 2.364-2.408c0 1.307 1.137 2.408 2.466 2.408h0.024c1.329 0 2.466-1.101 2.466-2.408 0 1.307 1.035 2.408 2.364 2.408s2.398-1.101 2.398-2.408c0 1.307 1.107 2.408 2.436 2.408 1.107 0 2.325-1.146 2.325-2.45v-1.029c-0.020-0.621-2.082-2.991-3.129-3.612-3.254-0.114-5.51-0.134-8.871-0.133s-7.945 0.053-8.871 0.133zM9.506 7.815c-0.133 0.23-0.288 0.428-0.467 0.601l-0.001 0.001c-0.502 0.49-1.189 0.794-1.947 0.794-0.001 0-0.002 0-0.003 0-0.759 0-1.447-0.303-1.949-0.795l0 0c-0.182-0.178-0.32-0.368-0.446-0.59l-0.001 0c-0.126 0.222-0.302 0.412-0.485 0.59-0.502 0.491-1.19 0.794-1.949 0.794-0.001 0-0.002 0-0.003 0h0c-0.091 0-0.186-0.025-0.263-0.052-0.107 1.112-0.152 2.175-0.168 2.95l-0 0.004c-0.002 0.394-0.004 0.717-0.006 1.167 0.021 2.334-0.231 7.564 1.029 8.849 1.953 0.455 5.546 0.663 9.151 0.664h0.001c3.605-0.001 7.198-0.209 9.151-0.664 1.26-1.285 1.008-6.516 1.029-8.849-0.002-0.45-0.004-0.773-0.006-1.167l-0-0.004c-0.016-0.775-0.061-1.838-0.168-2.95-0.077 0.026-0.172 0.052-0.263 0.052-0.001 0-0.002 0-0.002 0-0.759 0-1.447-0.303-1.949-0.795l0.001 0c-0.182-0.178-0.358-0.368-0.485-0.59l-0.001-0c-0.127 0.222-0.265 0.412-0.446 0.59-0.502 0.491-1.19 0.795-1.948 0.795-0.001 0-0.002 0-0.003 0h0c-0.758 0-1.445-0.304-1.947-0.795-0.179-0.174-0.334-0.372-0.461-0.589l-0.007-0.013c-0.132 0.23-0.286 0.428-0.463 0.602l-0 0c-0.502 0.491-1.19 0.795-1.949 0.795-0.001 0-0.002 0-0.003 0h0c-0.026 0-0.053-0.001-0.079-0.002h-0.001c-0.026 0.001-0.053 0.002-0.080 0.002-0.001 0-0.002 0-0.003 0-0.759 0-1.447-0.303-1.949-0.795l0.001 0c-0.178-0.174-0.331-0.372-0.456-0.589l-0.007-0.013zM7.502 10.406l-0 0.001h0.001c0.794 0.002 1.498 0 2.372 0.953 0.687-0.072 1.406-0.108 2.125-0.107h0.001c0.719-0.001 1.437 0.035 2.125 0.107 0.873-0.953 1.578-0.952 2.372-0.953h0.001l-0-0.001c0.375 0 1.875 0 2.92 2.935l1.122 4.026c0.832 2.995-0.266 3.069-1.636 3.071-2.031-0.076-3.156-1.551-3.156-3.026-1.124 0.184-2.436 0.276-3.748 0.276h-0.001c-1.312 0-2.624-0.092-3.748-0.276 0 1.475-1.125 2.95-3.156 3.026-1.37-0.003-2.468-0.076-1.636-3.071l1.123-4.026c1.045-2.935 2.545-2.935 2.92-2.935zM12 12.713v0.001c-0.002 0.002-2.138 1.964-2.523 2.662l1.399-0.056v1.22c0 0.057 0.561 0.034 1.123 0.008h0.001c0.562 0.026 1.123 0.049 1.123-0.008v-1.22l1.399 0.056c-0.384-0.698-2.523-2.662-2.523-2.662v-0.001l-0 0z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/triple-beat" title="GitHub Repository">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://guatapuri.itch.io/triple-beat" title="Downloads">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.171 512.171" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M479.046,283.925c-1.664-3.989-5.547-6.592-9.856-6.592H352.305V10.667C352.305,4.779,347.526,0,341.638,0H170.971    c-5.888,0-10.667,4.779-10.667,10.667v266.667H42.971c-4.309,0-8.192,2.603-9.856,6.571c-1.643,3.989-0.747,8.576,2.304,11.627    l212.8,213.504c2.005,2.005,4.715,3.136,7.552,3.136s5.547-1.131,7.552-3.115l213.419-213.504    C479.793,292.501,480.71,287.915,479.046,283.925z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="juSaber" class="br2 ba dark-gray b--black-10 mb3 bg-white">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <div style="background-image:url(assets/images/juSaber.png);" class="bg-center cover aspect-ratio--object"></div>
+          </div>
+          <div class="pa2 ph3-ns pb3-ns bg-white">
+            <div class="dt w-100 mt1">
+              <div class="dtc">
+                <h1 class="f5 f4-ns mv0">JuSaber</h1>
+              </div>
+              <div class="dtc tr">
+                <h2 class="f5 mv0 green">Completed</h2>
+              </div>
+            </div>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+              JuSaber is a quick game I threw together on a 6-hour flight that takes
+              maps from Beat Saber and plays them as if they were Jubeat maps. I had
+              recently been in Japan and was disappointed that I could never find
+              Japanese rhythm games in American arcades. I originally wanted to make
+              a standard Jubeat emulator, but realized that I would then have to make
+              my own maps in order to be able to enjoy and play it. That was out of
+              scope for such a short flight, so I adapted by simply using Beat Saber
+              maps and a 4x3 grid rather than the standard 4x4. This also turned out
+              to be a good move as the smaller grid makes it easier to keep your
+              fingers on the right place on the keyboard. Finally, Beat Saber maps
+              turn out to be perfect for Jubeat-style play and are incredibly fun to
+              play in this way. Since it is playable and I'm kinda busy with other
+              things, I don't intend to develop it further in the forseeable future,
+              but it would be nice to at least improve the interface at some point.
+            </p>
+            <div class="tc">
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://www.youtube.com/watch?v=qAaxTD6C7Aw" title="YouTube Trailer">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/JuSaber" title="GitHub Repository">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/ddgond/JuSaber/releases" title="Downloads">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.171 512.171" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M479.046,283.925c-1.664-3.989-5.547-6.592-9.856-6.592H352.305V10.667C352.305,4.779,347.526,0,341.638,0H170.971    c-5.888,0-10.667,4.779-10.667,10.667v266.667H42.971c-4.309,0-8.192,2.603-9.856,6.571c-1.643,3.989-0.747,8.576,2.304,11.627    l212.8,213.504c2.005,2.005,4.715,3.136,7.552,3.136s5.547-1.131,7.552-3.115l213.419-213.504    C479.793,292.501,480.71,287.915,479.046,283.925z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="bottledUp" class="br2 ba dark-gray b--black-10 bg-white">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <div style="background-image:url(assets/images/bottledUp.png);" class="bg-center cover aspect-ratio--object"></div>
+          </div>
+          <div class="pa2 ph3-ns pb3-ns bg-white">
+            <div class="dt w-100 mt1">
+              <div class="dtc">
+                <h1 class="f5 f4-ns mv0">Bottled Up</h1>
+              </div>
+              <div class="dtc tr">
+                <h2 class="f5 mv0 silver">Buggy/Abandoned</h2>
+              </div>
+            </div>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+              Bottled Up is a game I worked on with a few friends for a hackathon
+              at MIT called Reality Virtually. In it, you are placed in a small room
+              with a collection of magical ingredients. You can use tools to prepare
+              these ingredients into potions, and then brew them in a big cauldron.
+              Using bottles, you can then bottle up the results and display them
+              proudly! Unfortunately, there's a bug with rendering to the VR headset
+              that is only present when building, so the only way to play this at
+              the moment is to run it within Unity.
+            </p>
+            <div class="tc">
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://www.youtube.com/watch?v=CGBW--ZoaEU" title="YouTube Trailer">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://devpost.com/software/bottled-up" title="Devpost Page">
+                <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.3 242" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g xmlns="http://www.w3.org/2000/svg" id="XMLID_1_">
+                  <path id="XMLID_6_" d="M133.7,76H118v90h14.7c30.9,0,45.1-18.1,45.1-45C177.8,90.9,164.9,76,133.7,76z"/>
+                  <path id="XMLID_9_" d="M210.2,0H70.1L0,121l70.1,121h140.1l70.1-121L210.2,0z M132.7,195H89V47h45.8c42.1,0,73.3,20.1,73.3,74   C208.1,172.8,170.6,195,132.7,195z"/>
+                </g></svg>
+              </a>
+              <a class="link near-black hover-dark-green dib h2 w2 mr3" href="https://github.com/RealityVirtually2019/Bottled-Up/tree/build" title="GitHub Repository">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <article data-name="Accounts">
+        <div class="w-100 ph3 pv4 tc bg-dark-green">
+          <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://github.com/ddgond" title="GitHub">
+            <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+            <span class="f6 ml3 pr2">GitHub</span>
+          </a>
+          <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.youtube.com/channel/UC2rhW9wosYxdw19cKyTrhww" title="youtubePrimary">
+            <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+            <span class="f6 ml3 pr2">Youtube (Main)</span>
+          </a>
+          <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.youtube.com/channel/UCUtgh9gAbKEGRdIlEKPsMtQ" title="youtubeSecondary">
+            <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+            <span class="f6 ml3 pr2">Youtube (Personal Projects)</span>
+          </a>
+          <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://guatapuri.itch.io/" title="steam">
+            <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M3.129 1.338c-1.047 0.622-3.109 2.991-3.129 3.612v1.029c0 1.304 1.219 2.45 2.325 2.45 1.329 0 2.436-1.101 2.436-2.408 0 1.307 1.069 2.408 2.398 2.408s2.364-1.101 2.364-2.408c0 1.307 1.137 2.408 2.466 2.408h0.024c1.329 0 2.466-1.101 2.466-2.408 0 1.307 1.035 2.408 2.364 2.408s2.398-1.101 2.398-2.408c0 1.307 1.107 2.408 2.436 2.408 1.107 0 2.325-1.146 2.325-2.45v-1.029c-0.020-0.621-2.082-2.991-3.129-3.612-3.254-0.114-5.51-0.134-8.871-0.133s-7.945 0.053-8.871 0.133zM9.506 7.815c-0.133 0.23-0.288 0.428-0.467 0.601l-0.001 0.001c-0.502 0.49-1.189 0.794-1.947 0.794-0.001 0-0.002 0-0.003 0-0.759 0-1.447-0.303-1.949-0.795l0 0c-0.182-0.178-0.32-0.368-0.446-0.59l-0.001 0c-0.126 0.222-0.302 0.412-0.485 0.59-0.502 0.491-1.19 0.794-1.949 0.794-0.001 0-0.002 0-0.003 0h0c-0.091 0-0.186-0.025-0.263-0.052-0.107 1.112-0.152 2.175-0.168 2.95l-0 0.004c-0.002 0.394-0.004 0.717-0.006 1.167 0.021 2.334-0.231 7.564 1.029 8.849 1.953 0.455 5.546 0.663 9.151 0.664h0.001c3.605-0.001 7.198-0.209 9.151-0.664 1.26-1.285 1.008-6.516 1.029-8.849-0.002-0.45-0.004-0.773-0.006-1.167l-0-0.004c-0.016-0.775-0.061-1.838-0.168-2.95-0.077 0.026-0.172 0.052-0.263 0.052-0.001 0-0.002 0-0.002 0-0.759 0-1.447-0.303-1.949-0.795l0.001 0c-0.182-0.178-0.358-0.368-0.485-0.59l-0.001-0c-0.127 0.222-0.265 0.412-0.446 0.59-0.502 0.491-1.19 0.795-1.948 0.795-0.001 0-0.002 0-0.003 0h0c-0.758 0-1.445-0.304-1.947-0.795-0.179-0.174-0.334-0.372-0.461-0.589l-0.007-0.013c-0.132 0.23-0.286 0.428-0.463 0.602l-0 0c-0.502 0.491-1.19 0.795-1.949 0.795-0.001 0-0.002 0-0.003 0h0c-0.026 0-0.053-0.001-0.079-0.002h-0.001c-0.026 0.001-0.053 0.002-0.080 0.002-0.001 0-0.002 0-0.003 0-0.759 0-1.447-0.303-1.949-0.795l0.001 0c-0.178-0.174-0.331-0.372-0.456-0.589l-0.007-0.013zM7.502 10.406l-0 0.001h0.001c0.794 0.002 1.498 0 2.372 0.953 0.687-0.072 1.406-0.108 2.125-0.107h0.001c0.719-0.001 1.437 0.035 2.125 0.107 0.873-0.953 1.578-0.952 2.372-0.953h0.001l-0-0.001c0.375 0 1.875 0 2.92 2.935l1.122 4.026c0.832 2.995-0.266 3.069-1.636 3.071-2.031-0.076-3.156-1.551-3.156-3.026-1.124 0.184-2.436 0.276-3.748 0.276h-0.001c-1.312 0-2.624-0.092-3.748-0.276 0 1.475-1.125 2.95-3.156 3.026-1.37-0.003-2.468-0.076-1.636-3.071l1.123-4.026c1.045-2.935 2.545-2.935 2.92-2.935zM12 12.713v0.001c-0.002 0.002-2.138 1.964-2.523 2.662l1.399-0.056v1.22c0 0.057 0.561 0.034 1.123 0.008h0.001c0.562 0.026 1.123 0.049 1.123-0.008v-1.22l1.399 0.056c-0.384-0.698-2.523-2.662-2.523-2.662v-0.001l-0 0z"/></svg>
+            <span class="f6 ml3 pr2">Itch.io</span>
+          </a>
+          <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="http://steamcommunity.com/id/Guatapuri" title="steam">
+            <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+            <span class="f6 ml3 pr2">Steam</span>
+          </a>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>

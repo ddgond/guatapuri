@@ -1,9 +1,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/APlayer.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <script src="assets/js/APlayer.min.js"></script>
+    <script src="assets/js/music.js"></script>
   </head>
-  <body class="bg-washed-blue">
+  <body class="bg-washed-blue" onload="playerInit();">
     <nav class="pa3 pa4-ns">
       <article class="mw6 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10" data-name="Profile">
         <div class="tc">
@@ -21,60 +24,94 @@
       </article>
     </nav>
     <article class="center mw5 mw7-ns hidden ba b--dark-green mv4" data-name="Intro">
-      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Ayy, it's me, Guatapuri!</h1>
+      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Intro</h1>
       <div class="pa3 bt b--dark-green bg-white">
         <p class="f6 f5-ns lh-copy mv0">
-          Hey! I’m Daniel Dangond, but I go by Guatapuri online. I have a passion for
-          video games and how they bring together many different artistic disciplines,
-          and my hobbies are correspondingly all over the place. I play and write
-          music, do 3D modeling, and, naturally, make games! Browse around to see some
-          stuff I’ve worked on and current projects!
+          This is where I share the various pieces of music I've made. At least,
+          those which feel complete enough to share online. Feel free to look
+          through what I have, and I'll try to make sure to keep this up to date.
+          For those curious, I make all of my music using Logic Pro and MIDI.
         </p>
       </div>
     </article>
-    <article class="center mw4 mw7-ns hidden ba b--dark-green mv4" data-name="Featured">
-      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Featured</h1>
-      <div class="flex flex-wrap justify-around bt b--dark-green bg-white">
-        <div class="br2 ba dark-gray b--black-10 mv4 w-40 bg-white">
-          <div class="aspect-ratio aspect-ratio--16x9">
-            <div style="background-image:url(assets/images/languagePractice.png);" class="bg-center cover aspect-ratio--object"></div>
-          </div>
-          <div class="pa2 ph3-ns pb3-ns bg-white">
-            <div class="dt w-100 mt1">
-              <div class="dtc">
-                <h1 class="f5 f4-ns mv0">VR Languages</h1>
-              </div>
-              <div class="dtc tr">
-                <h2 class="f5 mv0 gold">In Progress</h2>
-              </div>
-            </div>
-            <p class="f6 lh-copy measure mt2 mid-gray">
-              A VR project focused on enabling the user to practice conversations in a foreign language immersively and without need for a human partner. Done as a research project at MIT.
+
+    <article class="center mw4 mw7-ns hidden ba b--dark-green mv4" data-name="Music">
+      <h1 class="f4 bg-dark-green white mv0 pv3 ph3">Music</h1>
+      <div class="flex flex-column justify-around items-center bt b--dark-green bg-white pv4">
+        <div class="br2 ba dark-gray b--black-10 mb3 bg-white flex justify-around w-80 pa4">
+          <div class="mw5">
+            <img class="db ba b--black-10" alt="City of Hunger" src="assets/images/cityOfHunger.png">
+            <dl class="mt2 f6 lh-copy">
+              <dt class="clip">Title</dt>
+              <dd class="ml0 fw9">City of Hunger</dd>
+              <dt class="clip">Artist</dt>
+              <dd class="ml0 gray">Guatapuri</dd>
+            </dl>
+            <p>
+              Some tracks I put together for a hypothetical soundtrack for the
+              WIP game "City of Hunger", being created by Minna Sundberg, creator
+              of the webcomic "Stand Still. Stay Silent".
             </p>
-            <a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-green" href="projects.html#languages">More Info</a>
+            <p>
+              Music alongside gameplay: <a href="https://youtu.be/2JrqANW5NW8">YouTube</a>
+            </p>
           </div>
+          <div id="COHPlayer"></div>
         </div>
-        <div class="br2 ba dark-gray b--black-10 mv4 w-40 bg-white">
-          <div class="aspect-ratio aspect-ratio--16x9">
-            <div style="background-image:url(assets/images/ascent.png);" class="bg-center cover aspect-ratio--object"></div>
-          </div>
-          <div class="pa2 ph3-ns pb3-ns bg-white">
-            <div class="dt w-100 mt1">
-              <div class="dtc">
-                <h1 class="f5 f4-ns mv0">Ascent VR</h1>
-              </div>
-              <div class="dtc tr">
-                <h2 class="f5 mv0 green">Completed</h2>
-              </div>
-            </div>
-            <p class="f6 lh-copy measure mt2 mid-gray">
-              A VR project focused on immersive sound and a relaxing experience while climbing a mountain. Done as a class project in Fall 2018.
+        <div class="br2 ba dark-gray b--black-10 mb3 bg-white flex justify-around w-80 pa4">
+          <div class="mw5">
+            <img class="db ba b--black-10" alt="MIT Tracks" src="assets/images/creatingVideoGames.png">
+            <dl class="mt2 f6 lh-copy">
+              <dt class="clip">Title</dt>
+              <dd class="ml0 fw9">MIT Tracks</dd>
+              <dt class="clip">Artist</dt>
+              <dd class="ml0 gray">Guatapuri</dd>
+            </dl>
+            <p>
+              Music I created for my team projects in the class 6.073 Creating
+              Video Games at MIT. Cleaning Up was for a game based on Tetris
+              with a cutesy environmental theme. Crazy City was for a game that
+              was a cross between a city-builder and Crazy Taxi.
             </p>
-            <a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-green" href="projects.html#ascent">More Info</a>
           </div>
+          <div id="MITPlayer"></div>
+        </div>
+        <div class="br2 ba dark-gray b--black-10 mb3 bg-white flex justify-around w-80 pa4">
+          <div class="mw5">
+            <img class="db ba b--black-10" alt="Triple Beat" src="assets/images/tripleBeatAlbum.png">
+            <dl class="mt2 f6 lh-copy">
+              <dt class="clip">Title</dt>
+              <dd class="ml0 fw9">Triple Beat</dd>
+              <dt class="clip">Artist</dt>
+              <dd class="ml0 gray">Guatapuri</dd>
+            </dl>
+            <p>
+              The only track I made for Triple Beat, as I was pressed for time
+              in the 3-day hackathon I made the game for, and wouldn't have had
+              time to both write another song and map it out in-game.
+            </p>
+          </div>
+          <div id="TBPlayer"></div>
+        </div>
+        <div class="br2 ba dark-gray b--black-10 mb3 bg-white flex justify-around w-80 pa4">
+          <div class="mw5">
+            <img class="db ba b--black-10" alt="Misc Tracks" src="assets/images/howDoIEndASong.png">
+            <dl class="mt2 f6 lh-copy">
+              <dt class="clip">Title</dt>
+              <dd class="ml0 fw9">Misc Tracks</dd>
+              <dt class="clip">Artist</dt>
+              <dd class="ml0 gray">Guatapuri</dd>
+            </dl>
+            <p>
+              Miscellaneous music that doesn't fit into any specific categories.
+              I made most of these just for fun and practice.
+            </p>
+          </div>
+          <div id="MiscPlayer"></div>
         </div>
       </div>
     </article>
+
     <footer>
       <article data-name="Accounts">
         <div class="w-100 ph3 pv4 tc bg-dark-green">
